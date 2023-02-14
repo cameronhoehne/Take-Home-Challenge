@@ -14,13 +14,11 @@ passwordIcon.addEventListener("click", function() {
         passwordIcon.classList.add("eye-icon-hide")
         passwordField.type = "text";
         val = "eye-icon-hide"
-        console.log(val)
     } else if (val === "eye-icon-hide"){ 
         passwordIcon.classList.remove("eye-icon-hide")
         passwordIcon.classList.add("eye-icon-show")
         passwordField.type = "password";
         val = "eye-icon-show"
-        console.log(val)
   }     
  }
 )
