@@ -40,6 +40,57 @@ a {
   box-shadow: 0px 0px 60px -30px;
 }
 
+/* Submitted Box Styling */
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: lightblue;
+  height: 29em;
+  width: 25em;
+  padding: 35px;
+  background-color:#674EE6;
+  box-shadow: 0px 0px 60px -30px;
+}
+
+.chat-icon {
+  position: relative;
+  width: 20em;
+  height: 20em;
+  background: none;
+  background-size: 14em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../assets/chat-icon.svg");
+}
+
+.close-icon {
+  position: relative;
+  width: 3.2em;
+  height: 3.2em;
+  cursor: pointer;
+  border-radius: 50px;
+  background-size: 1.1em;
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../assets/close-icon.svg");
+  margin-left: 115%;
+  margin-top: -15em;
+}
+
+.box2 h1 {
+  color: white;
+  font-size: 1.4rem;
+  margin-top: 1em;
+  margin-bottom: -4em;
+}
+
+/* Main Form Styling */
+
 form {
   margin-top: 1.6em;
   display: flex;
@@ -97,7 +148,7 @@ justify-content: space-between;
   width: 2em;
   height: 2em;
   background: none;
-  background-image: url(".assets/danger-circle-icon.svg");
+  background-image: url("../assets/danger-circle-icon.svg");
   background-size: 1.6em;
   z-index: 999;
   background-repeat: no-repeat;
@@ -124,7 +175,7 @@ justify-content: space-between;
   width: 2em;
   height: 2em;
   background: none;
-  background-image: url(".assets/eye-show-icon.svg");
+  background-image: url("../assets/eye-show-icon.svg");
   background-size: 1.6em;
   z-index: 999;
   background-repeat: no-repeat;
@@ -138,7 +189,7 @@ justify-content: space-between;
   width: 2em;
   height: 2em;
   background: none;
-  background-image: url(".assets/eye-hide-icon.svg");
+  background-image: url("../assets/eye-hide-icon.svg");
   background-size: 1.6em;
   z-index: 999;
   background-repeat: no-repeat;
@@ -148,7 +199,7 @@ justify-content: space-between;
   margin-left: 90%;
 }
 
-
+/* More Form Stylings */
 
 .checkbox-block {
   display: flex;
@@ -195,4 +246,55 @@ justify-content: space-between;
 
 .submit-block p {
   font-size: .9rem;
+}
+
+@media only screen and (max-width: 375px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .box2 {
+    height: 24em;
+    width: 16em;
+  }
+  .box2 h1 {
+    font-size: 1.4rem;
+  }
+  input {
+    font-size: .7rem;
+    padding: 2px 1em 2px 1em;
+  }
+  .box {
+  height: 23em;
+  width: 16em;
+  }
+  .error-icon-hide,
+  .error-icon-show,
+  .eye-icon-hide,
+  .eye-icon-show {
+    width: 1.4em;
+    height: 1.4em;
+    margin-top: -30px;
+    margin-left: 85%;
+  }
+  .chat-icon {
+    background-size: 12em;
+  }
+  .close-icon {
+    width: 3em;
+    height: 3em;
+    margin-top: -10em;
+    margin-left: 120%;
+  }
+  .checkbox-block {
+    margin-bottom: 1.1em;
+  }
+  .checkbox {
+    width: 1em;
+    height: 1em;
+  }
+  .submit {
+    height: 3em;
+    width: 15em;
+    margin-bottom: .3em;
+  }
 }
