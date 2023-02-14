@@ -7,24 +7,30 @@ const passwordIcon = document.querySelector("#password-icon");
 const emailField = document.getElementById("email-field");
 
 //Password Shower/Obscurer
+let val = passwordIcon.classList.value;
 passwordIcon.addEventListener("click", function() {
-    if (passwordIcon.classList.value === "eye-icon-show") {
-        passwordIcon.classList.remove("eye-icon-show")
+    if (val === "eye-icon-show") {
+        passwordIcon.classList.remove("eye-icon-show") || 
         passwordIcon.classList.add("eye-icon-hide")
         passwordField.type = "text";
-    } else if (passwordIcon.classList.value === "eye-icon-hide"){ 
+        val = "eye-icon-hide"
+        console.log(val)
+    } else if (val === "eye-icon-hide"){ 
         passwordIcon.classList.remove("eye-icon-hide")
         passwordIcon.classList.add("eye-icon-show")
         passwordField.type = "password";
+        val = "eye-icon-show"
+        console.log(val)
   }     
  }
 )
 
+//Submit Button Action
 button.addEventListener("click", function() {
     validateInputs();
-
 })
 
+//Remove Error Styles on Focus
 emailField.addEventListener("focus", function() {
         emailField.classList.remove("input-invalid");
         emailField.classList.add("input-main");
@@ -36,10 +42,14 @@ passwordField.addEventListener("focus", function() {
     passwordField.classList.remove("input-invalid");
     passwordField.classList.add("input-main");
     passwordIcon.classList.remove("error-icon-show");
-    passwordIcon.classList.add("eye-icon-show");
+    if (val === "eye-icon-show") {
+        passwordIcon.classList.add("eye-icon-show")
+    } else if (val === "eye-icon-hide") {
+        passwordIcon.classList.add("eye-icon-hide")
+    }
 })
 
-
+//Validator Function
 function validateInputs() {
     let email = document.getElementById("email-field").value;
     let password = document.getElementById("password-field").value;
