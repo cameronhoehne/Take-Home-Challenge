@@ -64,7 +64,7 @@ a {
   background-size: 14em;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("../assets/chat-icon.svg");
+  background-image: url("../chat-icon.svg");
 }
 
 .close-icon {
@@ -77,7 +77,7 @@ a {
   background-color: white;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("../assets/close-icon.svg");
+  background-image: url("../close-icon.svg");
   margin-left: 115%;
   margin-top: -15em;
 }
@@ -148,7 +148,7 @@ justify-content: space-between;
   width: 2em;
   height: 2em;
   background: none;
-  background-image: url("../assets/danger-circle-icon.svg");
+  background-image: url("../danger-circle-icon.svg");
   background-size: 1.6em;
   z-index: 999;
   background-repeat: no-repeat;
@@ -175,7 +175,7 @@ justify-content: space-between;
   width: 2em;
   height: 2em;
   background: none;
-  background-image: url("../assets/eye-show-icon.svg");
+  background-image: url("../eye-show-icon.svg");
   background-size: 1.6em;
   z-index: 999;
   background-repeat: no-repeat;
